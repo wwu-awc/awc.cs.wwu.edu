@@ -95,10 +95,6 @@
   bottom: 0;
 }
 
-.item {
-  max-height: 818px;
-}
-
 #events-carousel {
   display: none;
 }

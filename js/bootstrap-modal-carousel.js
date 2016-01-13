@@ -151,3 +151,7 @@ function closeCarousel() {
 function openCarousel() {
   document.getElementById('events-carousel').style.display = 'block';
 }
+
+var h = $(window).height();
+var scale = 0.75; // This is 75%
+$(".item").css('max-height', h * scale);
