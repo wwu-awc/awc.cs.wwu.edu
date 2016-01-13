@@ -17,6 +17,9 @@
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
 
+    <!-- Carousel CSS -->
+    <link href="css/bootstrap-modal-carousel.css" rel="stylesheet" />
+
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"
       type="text/css">
@@ -240,8 +243,8 @@
         </div>
 
         <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a href="#" class="portfolio-link" data-toggle="modal" data-target="#upcoming-events">
+          <div class="col-md-6 col-sm-6 portfolio-item">
+            <a href="#" onclick="openCarousel()" class="portfolio-link" data-toggle="modal" data-target="#previous-events" data-local="#events-carousel">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-university fa-3x"></i>
@@ -255,22 +258,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 portfolio-item">
-             <a href="#the-a-team" class="portfolio-link" data-toggle="modal">
-               <div class="portfolio-hover">
-                 <div class="portfolio-hover-content">
-                   <i class="fa fa-users fa-3x"></i>
-                 </div>
-               </div>
-               <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-             </a>
-             <div class="portfolio-caption">
-               <h4>Meet the Team</h4>
-               <p class="text-muted">AWC/ACM Activities Team</p>
-             </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-6 col-sm-6 portfolio-item">
             <a href="#calendar-modal" class="portfolio-link" data-toggle="modal">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -284,23 +272,6 @@
               <p class="text-muted">Check back for new events!</p>
             </div>
           </div>
-          <!-- To create a new "portfolio" item -->
-          <!--
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a href="#calendar-modal" class="portfolio-link" data-toggle="modal">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-calendar fa-3x"></i>
-                </div>
-              </div>
-              <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>NAME OF "PORTFOLIO" ITEM</h4>
-              <p class="text-muted">SHORT CATCHY DESCRIPTION</p>
-            </div>
-          </div>
-          -->
         </div>
       </div>
     </section>
@@ -811,99 +782,119 @@
       <!-- Modals -->
       <!-- Use the modals below to showcase details about the various outreach or events! -->
 
-      <!-- Events Modal-->
-      <div class="portfolio-modal modal fade" id="upcoming-events" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl">
-              </div>
+      <!-- Previous Events Carousel -->
+      <div id="events-carousel" class="carousel slide carousel-fit" data-ride="carousel" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+          <div class="item active">
+            <img src="img/events/graceHopper/2015/GHC20151.jpg" alt="Picture at Grace Hopper Conference">
+            <div class="carousel-caption">
+              <h3>Grace Hopper Conference</h3>
+              <p>Fall 2015</p>
             </div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
-                <div class="modal-body">
 
-                  <!-- Project Details Go Here -->
-                  <h2>Previous Activities</h2>
-                  <p class="item-intro text-muted">Check out our past events!</p>
-                  <!--Start of the Events drop down list-->
-                  <div class="accordion" id="accordion3">
+          <div class="item">
+            <img src="img/events/graceHopper/2015/GHC20152.jpg" alt="Picture at Grace Hopper Conference">
+            <div class="carousel-caption">
+              <h3>Grace Hopper Conference</h3>
+              <p>Fall 2015</p>
+            </div>
+          </div>
 
-                  <!--
-                  About the accordions and the collapsable list
+          <div class="item">
+            <img src="img/events/graceHopper/2015/GHC20153.jpg" alt="Picture at Grace Hopper Conference">
+            <div class="carousel-caption">
+              <h3>Grace Hopper Conference</h3>
+              <p>Fall 2015</p>
+            </div>
+          </div>
 
-                  The accordion-group div contains one event item
-                  the accordion div above must have a different ID from other
-                  accordions used on the website (outreach opportunities).
-                  The same is true for the collapse div below
-                  <div class="accordion-group">
-                  <div class="accordion-heading">
-                  <h3><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapse1">
-                  Type here the title of the event -->
+          <div class="item">
+            <img src="img/events/graceHopper/2015/GHC20154.jpg" alt="Picture at Grace Hopper Conference">
+            <div class="carousel-caption">
+              <h3>Grace Hopper Conference</h3>
+              <p>Fall 2015</p>
+            </div>
+          </div>
 
-                    <div class="accordion-group">
-                      <div class="accordion-heading">
-                        <h3><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapse4">
-                          Women in Tech Panel (TAG Event)
-                        </a></h3>
-                      </div>
-                      <div id="collapse4" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                          <p><strong>When?</strong> February 20th 11:30am-1:15pm </br>
-                            <strong>Where?</strong> The Pickford</br>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+          <div class="item">
+            <img src="img/events/mixItUp/2014/mixItUp20141.jpg" alt="Picture at Mix It Up">
+            <div class="carousel-caption">
+              <h3>Mix It Up</h3>
+              <p>Fall 2014</p>
+            </div>
+          </div>
 
-                    <div class="accordion-group">
-                      <div class="accordion-heading">
-                        <h3><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapse5">
-                          Movie Night
-                        </a></h3>
-                      </div>
-                      <div id="collapse5" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                          <p><strong>When?</strong> February 21st 7 PM</br>
-                            <strong>Where?</strong> TBA</br>
-                            <strong>What?</strong> Gather with friends, cozy up, and take a break from studying!</br>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+          <div class="item">
+            <img src="img/events/mixItUp/2014/mixItUp20142.jpg" alt="Picture at Mix It Up">
+            <div class="carousel-caption">
+              <h3>Mix It Up</h3>
+              <p>Fall 2014</p>
+            </div>
+          </div>
 
-                    <div class="accordion-group">
-                      <div class="accordion-heading">
-                        <h3><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapse6">
-                          Sony Hack Talk
-                        </a></h3>
-                      </div>
-                      <div id="collapse6" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                          <p><strong>When?</strong> March 4th 5-7pm</br>
-                            <strong>Where?</strong> TBA</br>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <!--End of the Events drop down list-->
+          <div class="item">
+            <img src="img/events/ropesCourse/2014/ropes20141.jpg" alt="Picture at the Lakewood Ropes Course">
+            <div class="carousel-caption">
+              <h3>Lakewood Ropes Course</h3>
+              <p>Fall 2014</p>
+            </div>
+          </div>
 
-                    <strong>Do you want more information about any of these
-                      events? You can E-Mail us at
-                      <a href="mailto:awc.wwu@gmail.com?Subject=Event%20Inquiry">
-                        awc.wwu@gmail.com
-                      </a></strong></br></br>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
-                  </div>
-                </div>
-              </div>
+          <div class="item">
+            <img src="img/events/ropesCourse/2014/ropes20142.jpg" alt="Picture at the Lakewood Ropes Course">
+            <div class="carousel-caption">
+              <h3>Lakewood Ropes Course</h3>
+              <p>Fall 2014</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img/events/ropesCourse/2014/ropes20143.jpg" alt="Picture at the Lakewood Ropes Course">
+            <div class="carousel-caption">
+              <h3>Lakewood Ropes Course</h3>
+              <p>Fall 2014</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img/events/ropesCourse/2014/ropes20144.jpg" alt="Picture at the Lakewood Ropes Course">
+            <div class="carousel-caption">
+              <h3>Lakewood Ropes Course</h3>
+              <p>Fall 2014</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Previous Events Modal -->
+      <div class="modal fade modal-fullscreen force-fullscreen" id="previous-events" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" onclick="closeCarousel()" class="btn btn-primary pull-right" data-dismiss="modal">
+                <i class="fa fa-times"></i> Close
+              </button>
+              <h4 class="modal-title">Previous Activities</h4>
+            </div>
+            <div class="modal-body">
+              <p>…</p>
+            </div>
+            <div class="modal-footer">
+              <!-- Controls -->
+              <a class="left carousel-control" href="#events-carousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#events-carousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <!--End of the Events Modal-->
 
       <!-- More Outreach Opportunities Modal -->
       <div class="portfolio-modal modal fade" id="more-outreach-modal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -984,36 +975,6 @@
                     <iframe src="https://docs.google.com/forms/d/17LB7nuacnO2Uc-r_HcBU41O6a8GUqHHL6caAtN3VNM4/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
                   </div>
                   <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Meet the Activities Team Modal -->
-      <div class="portfolio-modal modal fade" id="the-a-team" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl">
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
-                <div class="modal-body">
-                  <h2>Meet The Activities Team</h2>
-                  <p class="item-intro text-muted">The joint ACM-AWC Activities
-                    Team coordinates with the ACM and AWC to plan events that
-                    benefit both organizations and the Computer Science
-                    Department as a whole. Joining the Activities Team will
-                    provide you with excellent leadership opportunities,
-                    community building, networking with companies and students,
-                    and something really great for your resume.</p>
-                  <img class="img-centered" src="img/portfolio/ateam.png" alt="">
-                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 </div>
               </div>
             </div>
@@ -1255,5 +1216,9 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <!-- Carousel JavaScript -->
+    <script src="js/bootstrap-modal-carousel.js"/></script/>
+
   </body>
 </html>
