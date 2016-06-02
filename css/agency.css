@@ -348,6 +348,15 @@ section h3.section-subheading {
     font-weight: 400;
 }
 
+section h3.section-subheading#tshirt-link{
+    margin-bottom: 2%;
+}
+
+section h3.section-subheading#tshirt-p{
+    margin-bottom: 2%;
+
+}
+
 @media(min-width:768px) {
     section {
         padding: 150px 0;
