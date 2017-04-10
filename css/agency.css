@@ -261,11 +261,20 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+.tshirt-btn {
+	background-color: #222;
+	border-color: #fff;
+}
+
+.tshirt-btn:hover {
+	border-color: #fec503;
+}
+
 header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/backgrounds/western_grayscale.png);
+    background-image: url(../img/backgrounds/western-grayscale.png);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -337,6 +346,15 @@ section h3.section-subheading {
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
+}
+
+section h3.section-subheading#tshirt-link{
+    margin-bottom: 2%;
+}
+
+section h3.section-subheading#tshirt-p{
+    margin-bottom: 2%;
+
 }
 
 @media(min-width:768px) {
@@ -919,6 +937,54 @@ ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
     background-color: #fed136;
+}
+
+ul.contact-social-buttons {
+    margin-bottom: 0;
+}
+
+ul.contact-social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #222;
+    background-color: #fed136;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.contact-social-buttons li a:hover,
+ul.contact-social-buttons li a:focus,
+ul.contact-social-buttons li a:active {
+    background-color: #222;
+    color: #fed136;
+}
+
+h3.contact-section-subheading {
+    color: #fff;
+    margin-bottom: 25px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+a.contact-link {
+    color: #fff;
+}
+
+a.contact-link:hover,
+a.contact-link:focus,
+a.contact-link:active,
+a.contact-link.active {
+    color: #fec503;
+    text-decoration: none;
 }
 
 .btn:focus,
